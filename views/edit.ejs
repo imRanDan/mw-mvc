@@ -16,9 +16,9 @@
           <li>
             <form action="/edit/update/<% item._id%>" method="POST">
               <label for="textInput">Input Text</label>
-              <input type="text" name = "textInput">
+              <input type="text" name = "textInput" value = "<%= item.textInput %>">
               <label for="numInput">Input Number</label>
-              <input type="number" name = "numInput" value = 0>
+              <input type="number" name = "numInput" value = "<%= item.numInput %>">
               <button type="submit">Add Item</button>
             </form>
           </li>
