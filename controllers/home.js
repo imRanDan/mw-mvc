@@ -25,7 +25,4 @@ module.exports = {
       res.redirect("/")
     }
   },
-  deleteItem: async (req, res) => {
-    
-  }
 }
