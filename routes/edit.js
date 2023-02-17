@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 const editController = require('../controllers/edit')
 
-router.get('/:id', editController.getEdit) //get the edit page with item id to be edited
-router.get('/delete/:id', editController.deleteItem)// deletes item
-router.post('/update/:id', editController.updateItem) // updates the item 
+router.get('/:id', editController.getEdit)
+router.get('/delete/:id', editController.deleteItem)
+router.post('/update/:id', editController.updateItem)
 
 
 module.exports = router
