@@ -20,14 +20,18 @@
               <input type="text" name = "textInput" value = "<%= item.textInput %>">
               <label for="numInput">Input Number</label>
               <input type="number" name = "numInput" value = "<%= item.numInput %>">
-              <button type="submit">Confirm</button>
+              <button type="submit" class="confirm">Confirm</button>
               <a href="/">Cancel</a>
             </form>
           </li>
           <% } else { %>
             <li>
-              <div><%= item.textInput %></div>
-              <div><%= item.numInput %></div>
+              <div>
+                <%= item.textInput %>
+              </div>
+              <div>
+                <%= item.numInput %>
+              </div>
               <a href="/edit/<%= item._id %>">Edit</a>
               <a href="/edit/delete/<%= item._id %>" class="delete">Cancel</a>
             </li>
