@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit Item</title>
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
   <section>
@@ -28,13 +29,12 @@
               <div><%= item.textInput %></div>
               <div><%= item.numInput %></div>
               <a href="/edit/<%= item._id %>">Edit</a>
-              <a href="/edit/delete/<%= item._id %>">Delete</a>
+              <a href="/edit/delete/<%= item._id %>" class="delete">Cancel</a>
             </li>
-            <% }) %>
+            <% } %>
         <% }) %>
       </ul>
     </section>
   </section>
-  
 </body>
 </html>
